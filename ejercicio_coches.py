@@ -41,5 +41,6 @@ class Coche(Vehiculo):
         return super().__str__() + ", tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilindrada)
 
 coche_prueba = Coche("negro", 4, 190, 1150)
+print(coche_prueba.color)
 
 
