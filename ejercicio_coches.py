@@ -13,7 +13,16 @@ Recordatorio
 
 Puedes utilizar el atributo especial de clase name para recuperar el nombre de 
 la clase de un objeto:
+
 type(objeto).__name
 
 '''
+class Vehiculo:
+
+    def __init__(self,color,ruedas):
+        self.color = color
+        self.ruedas = ruedas
+
+    def __str__(self):
+        return "El vehículo es de color {} y tiene {} ruedas".format(self.color, self.ruedas)
 
