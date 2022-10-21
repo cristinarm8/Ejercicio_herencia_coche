@@ -25,6 +25,7 @@ class Vehiculo:
         self.ruedas = ruedas
 
     def __str__(self):
+        #return "Vehículo: ", type(self).__name__ ,"\n\tColor: {}\n\tRuedas".format(self.color, self.ruedas)
         return "El vehículo es de color {} y tiene {} ruedas".format(self.color, self.ruedas)
 
 vehiculo = Vehiculo("verde", 4)
