@@ -70,12 +70,23 @@ class Bicicleta(Vehiculo):
     def __str__(self):
         return super().__str__() + ", es del tipo {}".format(self.tipo)
 
-bicicleta = Bicicleta("blanca", 2, "urbana")
+bicicleta = Bicicleta("blanco", 2, "urbana")
 print(bicicleta)
 
 
+class Motocicleta(Bicicleta):
 
+    # Método constructor:
+    def __init__(self, color,ruedas,tipo,velocidad,cilindrada):
+        super().__init__(color, ruedas, tipo)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
 
+    def __str__(self):
+        return super().__str__() + ", tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilinndrada)
+
+motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
+print(motocicleta)
 
 
 
