@@ -44,3 +44,16 @@ coche_prueba = Coche("negro", 4, 190, 1150)
 print(coche_prueba.color)
 
 
+class Camioneta(Coche):
+
+    # Método constructor:
+    def __init__(self, color, ruedas, velocidad, cilindrada, carga):
+        super().__init__(velocidad, cilindrada)
+        self.carga = carga
+
+
+        
+
+
+
+
