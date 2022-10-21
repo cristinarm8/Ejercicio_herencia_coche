@@ -45,7 +45,7 @@ class Coche(Vehiculo):
         return super().__str__() + "\n\tVelocidad: {} k/m\n\tCilindrada: {} cc".format(self.velocidad, self.cilindrada)
 
 coche = Coche("negro", 4, 190, 1150)
-print("Vehículo:", type(coche).__name__, coche)
+print("\nVehículo:", type(coche).__name__, coche)
 
 class Camioneta(Coche):
 
@@ -58,7 +58,7 @@ class Camioneta(Coche):
         return super().__str__() + "\n\tCarga: {} kg".format(self.carga)
 
 camioneta = Camioneta("azul", 4, 120, 1200, 1300)
-print("Vehículo:", type(camioneta).__name__, camioneta)
+print("\nVehículo:", type(camioneta).__name__, camioneta)
 
 class Bicicleta(Vehiculo):
 
@@ -71,7 +71,7 @@ class Bicicleta(Vehiculo):
         return super().__str__() + "\n\tTipo {}".format(self.tipo)
 
 bicicleta = Bicicleta("blanco", 2, "urbana")
-print("Vehículo:", type(bicicleta).__name__, bicicleta)
+print("\nVehículo:", type(bicicleta).__name__, bicicleta)
 
 
 class Motocicleta(Bicicleta):
@@ -86,11 +86,11 @@ class Motocicleta(Bicicleta):
         return super().__str__() + "\n\tVelocidad: {} k/m\n\tCilindrada: {} cc".format(self.velocidad, self.cilindrada)
 
 motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
-print("Vehículo:", type(motocicleta).__name__, motocicleta)
+print("\nVehículo:", type(motocicleta).__name__, motocicleta)
 
 lista_vehiculos = [coche, camioneta, bicicleta, motocicleta]
 
-print("Imprimiendo lista_vehiculos:")
+print("\nImprimiendo lista_vehiculos:")
 for x in lista_vehiculos:
     print(x)
 
