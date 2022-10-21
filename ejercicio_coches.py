@@ -71,7 +71,7 @@ class Bicicleta(Vehiculo):
         return super().__str__() + "\n\tTipo {}".format(self.tipo)
 
 bicicleta = Bicicleta("blanco", 2, "urbana")
-print("Vehículo: ", type(bicicleta).__name__, bicicleta)
+print("Vehículo:", type(bicicleta).__name__, bicicleta)
 
 
 class Motocicleta(Bicicleta):
@@ -86,9 +86,9 @@ class Motocicleta(Bicicleta):
         return super().__str__() + "\n\tVelocidad: {} k/m\n\tCilindrada: {} cc".format(self.velocidad, self.cilindrada)
 
 motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
-print("Vehículo: ", type(motocicleta).__name__, motocicleta)
+print("Vehículo:", type(motocicleta).__name__, motocicleta)
 
-
-
+lista_vehiculos = [coche("negro", 4, 190, 1150), camioneta, bicicleta, motocicleta]
+print(lista_vehiculos)
 
 
