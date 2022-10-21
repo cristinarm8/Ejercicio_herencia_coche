@@ -83,7 +83,7 @@ class Motocicleta(Bicicleta):
         self.cilindrada = cilindrada
 
     def __str__(self):
-        return super().__str__() + ", tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilinndrada)
+        return super().__str__() + ", tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilindrada)
 
 motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
 print(motocicleta)
