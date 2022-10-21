@@ -38,7 +38,7 @@ class Coche(Vehiculo):
         self.cilindrada = cilindrada
     
     def __str__(self):
-        return super().__init__ + "tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilindrada)
+        return super().__str__() + ", tiene una velocidad de {} y una cilindrada de {}".format(self.velocidad, self.cilindrada)
 
 coche_prueba = Coche("negro", 4, 190, 1150)
 
