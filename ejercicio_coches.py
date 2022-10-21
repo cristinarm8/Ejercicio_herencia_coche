@@ -19,10 +19,20 @@ type(objeto).__name
 '''
 class Vehiculo:
 
+    # Método constructor.
     def __init__(self,color,ruedas):
         self.color = color
         self.ruedas = ruedas
 
     def __str__(self):
         return "El vehículo es de color {} y tiene {} ruedas".format(self.color, self.ruedas)
+
+class Coche(Vehiculo):
+
+    # Método constructor:
+    def __init__(self, color, ruedas, velocidad, cilindrada):
+        # super (). nod devuelve uun objeto temporal de la superclase que permite invocar a los atributos y métodos definidos en la misma.
+        super().__init__(color, ruedas)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
 
