@@ -90,9 +90,23 @@ print("\nVehículo:", type(motocicleta).__name__, motocicleta)
 
 lista_vehiculos = [coche, camioneta, bicicleta, motocicleta]
 
-print("\nImprimiendo lista_vehiculos:")
-for x in lista_vehiculos:
-    print(x)
+# Función catalogar(): reciba lista de vehículos y los recorra mostrando el nombre de su clase y sus traibutos.
+print("\nImprimiendo lista_vehiculos: ")
+
+def catalogar(lista_vehiculos, ruedas = None):
+
+    contador = 0
+
+    for x in lista_vehiculos:
+        if x.ruedas == ruedas:
+            print(type(x).__name__, x)
+            contador += 1
+
+    print("Se han encontrado {} vehículos con {} ruedas".format(contador, ruedas))  
+
+catalogar(lista_vehiculos, 2)
+
+
 
 
 
