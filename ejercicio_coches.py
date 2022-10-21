@@ -26,10 +26,10 @@ class Vehiculo:
 
     def __str__(self):
         #return "Vehículo: ", type(self).__name__ ,"\n\tColor: {}\n\tRuedas".format(self.color, self.ruedas)
-        return "El vehículo es de color {} y tiene {} ruedas".format(self.color, self.ruedas)
+        return "El vehículo es de color {}, tiene {} ruedas".format(self.color, self.ruedas)
 
-vehiculo = Vehiculo("verde", 4)
-print(vehiculo)
+#vehiculo = Vehiculo("verde", 4)
+#print(vehiculo)
 
 class Coche(Vehiculo):
 
@@ -42,7 +42,7 @@ class Coche(Vehiculo):
         self.cilindrada = cilindrada
     
     def __str__(self):
-        return super().__str__() + ", tiene una velocidad de {} k/m y una cilindrada de {}".format(self.velocidad, self.cilindrada)
+        return super().__str__() + ", tiene una velocidad de {} k/m, una cilindrada de {}".format(self.velocidad, self.cilindrada)
 
 coche = Coche("negro", 4, 190, 1150)
 print(coche)
@@ -55,10 +55,23 @@ class Camioneta(Coche):
         self.carga = carga
 
     def __str__(self):
-        return super().__str__() + " lleva una carga de {} kg".format(self.carga)
+        return super().__str__() + " y lleva una carga de {} kg".format(self.carga)
 
 camioneta = Camioneta("azul", 4, 120, 1200, 1300)
 print(camioneta)
+
+class Bicicleta(Vehiculo):
+
+    # Método contructor:
+    def __init__(self, color, ruedas, tipo):
+        super().__init__(color, ruedas)
+        self.tipo = tipo
+
+    def __str__(self):
+        return super().__str__() + ", es del tipo {}".format(self.tipo)
+
+bicicleta = Bicicleta("blanca", 2, "urbana")
+print(bicicleta)
 
 
 
