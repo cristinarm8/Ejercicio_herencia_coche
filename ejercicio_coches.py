@@ -55,10 +55,10 @@ class Camioneta(Coche):
         self.carga = carga
 
     def __str__(self):
-        return super().__str__() + " y lleva una carga de {} kg".format(self.carga)
+        return super().__str__() + "\n\tCarga: {} kg".format(self.carga)
 
 camioneta = Camioneta("azul", 4, 120, 1200, 1300)
-print(camioneta)
+print("Vehículo:", type(camioneta).__name__, camioneta)
 
 class Bicicleta(Vehiculo):
 
@@ -68,10 +68,10 @@ class Bicicleta(Vehiculo):
         self.tipo = tipo
 
     def __str__(self):
-        return super().__str__() + ", es del tipo {}".format(self.tipo)
+        return super().__str__() + "\n\tTipo {}".format(self.tipo)
 
 bicicleta = Bicicleta("blanco", 2, "urbana")
-print(bicicleta)
+print("Vehículo: ", type(bicicleta).__name__, bicicleta)
 
 
 class Motocicleta(Bicicleta):
@@ -83,10 +83,11 @@ class Motocicleta(Bicicleta):
         self.cilindrada = cilindrada
 
     def __str__(self):
-        return super().__str__() + ", tiene una velocidad de {} k/m y una cilindrada de {} cc".format(self.velocidad, self.cilindrada)
+        return super().__str__() + "\n\tVelocidad: {} k/m\n\tCilindrada: {} cc".format(self.velocidad, self.cilindrada)
 
 motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
-print(motocicleta)
+print("Vehículo: ", type(motocicleta).__name__, motocicleta)
+
 
 
 
