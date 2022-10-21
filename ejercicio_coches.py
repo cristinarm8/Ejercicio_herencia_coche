@@ -88,7 +88,11 @@ class Motocicleta(Bicicleta):
 motocicleta = Motocicleta("rojo", 2, "urbana", 120, 1000)
 print("Vehículo:", type(motocicleta).__name__, motocicleta)
 
-lista_vehiculos = [coche("negro", 4, 190, 1150), camioneta, bicicleta, motocicleta]
-print(lista_vehiculos)
+lista_vehiculos = [coche, camioneta, bicicleta, motocicleta]
+
+print("Imprimiendo lista_vehiculos:")
+for x in lista_vehiculos:
+    print(x)
+
 
 
