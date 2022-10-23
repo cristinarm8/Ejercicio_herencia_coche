@@ -97,7 +97,7 @@ def catalogar(lista_vehiculos, ruedas = None):
 
     contador = 0
 
-    print("\n**************************\nListado de vehículos de {} ruedas".format(ruedas))
+    print("\n*******************************\nListado de vehículos de {} ruedas".format(ruedas))
 
     for x in lista_vehiculos:
         if x.ruedas == ruedas:
